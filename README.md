@@ -1,2 +1,2 @@
 # docker-AspNetCore-SqlServer-Sample
-Practice learning
+This is part ogf my personnel learning related to docker and docker compose
