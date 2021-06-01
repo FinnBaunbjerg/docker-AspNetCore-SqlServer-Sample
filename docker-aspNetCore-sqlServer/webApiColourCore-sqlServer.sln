@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiColourCore", "WebApiColourCore\WebApiColourCore.csproj", "{F766797E-32DA-4138-B106-4AE3BDB5B375}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiColourData", "WebApiColourData\WebApiColourData.csproj", "{9527F6C1-74E0-4DF6-A18A-AC9A909D6DE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F766797E-32DA-4138-B106-4AE3BDB5B375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F766797E-32DA-4138-B106-4AE3BDB5B375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F766797E-32DA-4138-B106-4AE3BDB5B375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F766797E-32DA-4138-B106-4AE3BDB5B375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9527F6C1-74E0-4DF6-A18A-AC9A909D6DE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9527F6C1-74E0-4DF6-A18A-AC9A909D6DE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9527F6C1-74E0-4DF6-A18A-AC9A909D6DE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9527F6C1-74E0-4DF6-A18A-AC9A909D6DE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC135318-B5C8-487E-8C51-DEB360DC9A7D}
+	EndGlobalSection
+EndGlobal
