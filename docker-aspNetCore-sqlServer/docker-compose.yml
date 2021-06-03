@@ -1,0 +1,35 @@
+version: '3.9'
+
+services:
+  webapicolourcore:
+    container_name: webapicolourcore
+    image: ${DOCKER_REGISTRY-}webapicolourcore
+    build:
+      context: .
+      dockerfile: WebApiColourCore/Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - ASPNETCORE_URLS=http://*:5000
+      - ASPNETCORE_ENVIRONMENT=Development
+      # - DBSERVER=colorsqlserver
+      - DBSERVER=fibasql
+    depends_on:
+      - colorsqlserver
+    networks: 
+      - colournet 
+  colorsqlserver:
+    container_name: webapicolourdata 
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    ports:
+      - "1443:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=yourStrong(!)Password
+    networks:
+      colournet:
+        aliases:
+          - fibasql 
+          
+networks:
+  colournet: {}
